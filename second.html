@@ -7,17 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="container">
-  <h2>Aya Saker</h2>
-  <div class="star"></div>
-  <div class="moon"></div>
-  <button id="backButton">Back</button>
-</div>
+  <div class="container">
+    <h2>Aya Saker</h2>
+    <div class="star"></div>
+    <div class="moon"></div>
+    <!-- Back button -->
+    <button id="backButton">Back</button>
+  </div>
 
   <footer class="footer">
     <p>Created by Adam SL</p>
   </footer>
-  <script src="script.js"></script>
 
+  <!-- Include script.js to make buttons work -->
+  <script>
+    // Back button functionality
+    document.getElementById("backButton").addEventListener("click", function() {
+      window.location.href = "index.html";
+    });
+  </script>
 </body>
 </html>
